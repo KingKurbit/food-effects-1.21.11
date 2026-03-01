@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "food-effects",
+	"version": "${version}",
+	"name": "Food Effects+",
+	"description": "A lightweight Fabric mod that gives specific foods unique temporary status effects when eaten, adding simple but fun gameplay variety to vanilla survival",
+
+	"authors": [
+		"KingKurbit"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/food-effects/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kingkurbit.foodeffects.FoodEffects"
+		],
+		"fabric-datagen": [
+			"net.kingkurbit.foodeffects.FoodEffectsDataGenerator"
+		]
+	},
+	"mixins": [
+		"food-effects.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
